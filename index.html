@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pancho's Pizza</title>
+  <meta charset="UTF-8">  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/pizza.png">  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div id="carousel1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+       <img src="img/1.jpg" alt="" width="1920" height="2000">
+    </div>
+    <div class="carousel-item">
+       <img src="img/2.jpg" alt="" width="1920" height="1080">
+    </div>
+    <div class="carousel-item">
+       <img src="img/3.jpg" alt="" width="1920" height="1080">
+    </div>  
+    <div class="carousel-item">
+      <img src="img/4.jpg" alt="" width="1920" height="1080">
+   </div>  
+    </div>
+    
+    <!--Controles NEXT y PREV-->
+    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--Controles de indicadores-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+        <li data-target="#carousel1" data-slide-to="3"></li>
+    </ol>    
+</div>
+<br />
+  
+  <form>
+    <div id="cont1" class="col-md-12">
+      <fieldset>
+        <legend>La pizzone</legend>          
+        <p>Ingredientes</p>
+        <input type="checkbox" name="queso" /> <label>Queso</label><br>
+        <input type="checkbox" name="pimiento" /> <label>Pimiento</label><br>
+        <input type="checkbox" name="cebolla" /><label> Cebolla</label>
+        <p>Tamaño</p>
+        <input type="radio" name="tamano" /><label> Pequeña</label><br>
+        <input type="radio" name="tamano" /><label> Mediana </label><br>
+        <input type="radio" name="tamano" /> <label>Grande</label>
+      </fieldset>
+    </div>
+    <br />
+
+    <div id="cont2" class="col-md-12">
+      <fieldset>
+        <legend>Datos de la entrega</legend>
+        <label>Nombre</label><br>
+        <input type="text" name="nombre"><br>
+        <label>Dirección</label><br>
+        <input type="text" name="direccion"><br>
+        <label>Teléfono</label><br>
+        <input type="text" name="telefono"><br>
+        <label>Instrucciones especiales</label>
+        <br /><textarea class="col-md-9" cols="40" rows="15"></textarea>
+      </fieldset>
+    </div>
+    <br />
+
+    <div id="cont3">
+      <fieldset>
+        <legend>Método del pago</legend>
+        <div id="bot">
+          <select id="ok">
+            <option>Efectivo</option>
+            <option>VISA</option>
+            <option>Otso</option>
+          </select>
+        </div>
+        <br />
+      </fieldset>
+      <br />
+    </div>
+    <br />
+
+    <div id="bot">
+      <input type="submit" id="ok" value="Enviar pedido">
+    </div>
+  </form>
+<br>
+
+  <section id="footer" >  
+          <br>
+          <div class="copyright">© 2022. All Rights Reserved Pancho's Pizza.JJGA.com</div>       
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        $('.carousel').carousel();
+    </script>
+</body>
+
+</html>
